@@ -1,0 +1,506 @@
+/*============================
+    Common CSS Code
+=============================*/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Georgia';
+    margin: 0;
+    letter-spacing: .1rem;
+}
+.container{
+    margin:0 auto;
+    max-width: 114rem;
+    width:96%;
+}
+img{
+    max-width:100%;
+    height: auto;
+}
+
+
+/*========================
+Reusable CSS Code
+=========================*/
+
+p{
+    line-height: 1.5rem;
+}
+
+
+/*========================
+HEADER Area CSS Code
+=========================*/
+
+.header_area {
+	background: #290000;
+	padding: 4rem 0;
+}
+.logo{
+    display: block;
+    float: left;
+    width: 20%;
+    height: auto;
+}
+nav {
+	text-align: right;
+	width: 75%;
+	float: right;
+}
+nav ul li {
+	list-style: none;
+	display: inline-block;
+	margin: .5rem .3rem;
+	padding: 1rem 1.5rem;
+	border-radius: .7rem;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+nav ul li a {
+	font-size: 1.3rem;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav ul li:hover {
+    background: #76c38f;
+}
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #290000;
+    padding: 1rem 0;
+    -webkit-box-shadow: 0 .2rem .3rem #fff;
+    -moz-box-shadow: 0 .2rem .3rem #fff;
+    -ms-box-shadow: 0 .2rem .3rem #fff;
+    -o-box-shadow: 0 .2rem .3rem #fff;
+    box-shadow: 0 .2rem .3rem #fff;
+    z-index: 9999;
+}
+
+/*====================MOBILE MENU==================*/
+
+.mobile_menu span {
+	font-size: 3rem;
+	color: #333;
+	float: right;
+	padding-right: 2rem;
+    display: none;
+}
+.mobile_menu span:hover {
+	cursor: pointer;
+}
+.overlay{
+    height: 80%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1;
+    overflow: hidden;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition: .5s;
+}
+.overlay_mobile_menu{
+    position: relative;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+}
+.overlay a{
+    text-decoration: none;
+    display: block;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #999;
+    padding: 1rem 0;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+.overlay a:hover{
+    color: #fff;
+    font-weight: bold;
+}
+.close_btn{
+    position: absolute;
+    top: 2rem;
+    right: 4.5rem;
+    font-size: 5rem !important;
+}
+
+
+/*=======================
+START SLIDER BAR CSS CODE
+=======================*/
+
+
+.slider_area{
+    background-color: #290000;
+}
+/* Slideshow container */
+.slideshow-container {
+    max-width: 114rem;
+    margin: auto;
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    height: 45rem;
+    padding-top: 5%;
+  }
+  
+  .mySlides .description{
+      width: 40%;
+      height: 100%;
+      display: block;
+      float: left;
+      margin: 0 5%;
+  }
+  .mySlides .description h3{
+      color: #fff;
+      font-size: 4.6rem;
+      text-transform: capitalize;
+      margin-bottom: 4.5rem;
+  }
+  .mySlides .description p{
+      color: #979797;
+      font-size: 1.2rem;
+      letter-spacing: .12rem;
+      line-height: 1.5rem;
+      margin-bottom: 2.5rem;
+      font-weight: bold;
+  }
+  .mySlides .description a{
+      color: #fff;
+      font-size: 1.3rem;
+      text-decoration: none;
+      background-color: #76c38f;
+      padding: 1.5rem;
+      border-radius: 1.5rem;
+  }
+  .mySlides .image{
+      width: 40%;
+      height: 100%;
+      height: auto;
+      display: block;
+      float: right;
+      text-align: center;
+      margin: 0 5%;
+  }
+  .mySlides .image img{
+      width: 38rem;
+      height: 38rem;
+      border-radius: 50%;
+      border: 1rem solid #333;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      padding: 0 .9rem;
+      color: rgb(17, 206, 26);
+      font-weight: bold;
+      font-size: 3.3rem;
+      transition: 0.6s ease;
+      border-radius: 0 .3rem .3rem 0;
+      user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    top: 50%;
+    left: 94%;
+    border-radius: .3rem 0 0 .3rem;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.23);
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    margin: 0 .2rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: .5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  /*=======================
+  END SLIDER BAR CSS CODE
+  =======================*/
+
+  
+/*========================
+Services Area CSS Code
+=========================*/
+
+.services_area {
+	background-color: #660000;
+	padding: 6rem 0;
+	text-align: center;
+}
+.services_parent_box{
+    text-align: center;
+}
+.services_child_box{
+    background-color: #fff;
+    padding: 0 4rem 2rem 4rem;
+    transition: .3s;
+}
+.services_child_box:hover{
+    background-color: #76c38f;
+}
+.services_child_box img{
+    height: 12rem;
+    width: 12rem;
+    margin: 2rem 0;
+}
+.services_child_box h3 {
+	color: #333333;
+	font-size: 3.2rem;
+	line-height: 3.2rem;
+    margin-bottom: 1rem;
+}
+.services_child_box p {
+	color: #979797;
+	font-size: 1.2rem;
+}
+
+/*========================
+Work Area CSS Code
+=========================*/
+
+.work_area{
+    background-color: #660000;
+    padding: 6rem 0;
+    position: relative;
+    border-top: .3rem solid #303030;
+}
+.work_area_header h2 {
+	position: absolute;
+	top: -4.5%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: #303030;
+	color: #fff;
+	padding: 2rem;
+	border-radius: 1.7rem;
+}
+.work_parent_box{
+    text-align: center;
+}
+.work_child_box{
+    position: relative;
+    text-align: center;
+}
+.work_child_box:hover img{
+	border: .4rem solid #76c38f;
+    cursor: pointer;
+}
+.work_child_box:hover h5{
+	visibility: hidden;
+}
+.work_child_box:nth-child(4){
+    margin-left: 0;
+}
+.work_child_box img {
+	width: 100%;
+	height: 22rem;
+	border: .4rem solid #fff;
+    transition: .3s;
+}
+.work_child_box h5 {
+	display: inline-block;
+	background-color: #151515;
+	position: absolute;
+	bottom: 2%;
+	left: 50%;
+	transform: translateX(-50%);
+	font-size: 1.4rem;
+	word-spacing: .3rem;
+	letter-spacing: .3rem;
+	color: #fff;
+	width: 98%;
+	padding: 1rem 0;
+	text-transform: uppercase;
+}
+
+/*========================
+Footer Area CSS Code
+=========================*/
+
+.footer_area{
+    background-color: #303030;
+    padding: 6rem 0;
+    border-bottom: .2rem solid #000;
+}
+.footer_child_box h3{
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 0 0 3.5rem 0;
+}
+.footer_child_box .blogs_child h4{
+    color: #76c38f;
+    font-size: 1.3rem;
+    margin: 0 0 1rem 0;
+}
+.footer_child_box .blogs_child span a{
+    color: #76c38f;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.footer_child_box .blogs_child span {
+	color: #666666;
+	font-size: 1rem;
+    display: inline-block;
+    line-height: 1.3rem;
+}
+.footer_child_box .blogs_child p {
+	color: #979797;
+	font-size: 1.4rem;
+	line-height: 1.5rem;
+	letter-spacing: .15rem;
+	margin: 1.4rem 0;
+}
+.footer_child_box .blogs_child a {
+	color: #76c38f;
+	font-size: 1.3rem;
+    text-decoration: none;
+}
+.footer_child_box ul li {
+	padding: 1.2rem 0;
+	list-style: none;
+	border-bottom: .1rem solid #404040;
+}
+.footer_child_box ul li:first-child {
+	padding-top: 0;
+}
+.footer_child_box ul li a {
+	color: #76c38f;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.footer_child_box ul li a i{
+	color: #979797;
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+.footer_child_box a{
+    color: #76c38e;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+.footer_child_box p {
+	color: #979797;
+	font-size: 1.3rem;
+	margin-bottom: 1.5rem;
+	line-height: 2rem;
+	letter-spacing: 0;
+}
+.footer_child_box form input[type="text"],
+.footer_child_box form input[type="email"],
+.footer_child_box form textarea {
+	width: 100%;
+	padding: 1.3rem 0 1.3rem 1.3rem;
+	font-size: 1.3rem;
+	color: #989898;
+	background: #222222;
+	border: none;
+	border-radius: 1.5rem;
+	margin: 0 0 .8rem 0;
+}
+.footer_child_box form input[type="submit"] {
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	background: #76c38f;
+	color: #303030;
+	border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    cursor: pointer;
+    margin-top: .7rem;
+}
+
+/*========================
+COPYRIGHT Area CSS Code
+=========================*/
+
+.copyright_area{
+    background-color: #2b2b2b;
+    border-top: .2rem solid #3a3a3a;
+}
+.copyright_child_1 {
+	width: 50%;
+	float: left;
+	display: block;
+	text-align: left;
+    padding: 2.5rem 0;
+    color: #979797;
+    font-size: 1.3rem;
+}
+.copyright_child_2{
+    width: 50%;
+    float: right;
+    display: block;
+	text-align: right;
+    padding: 2.5rem 0;
+    color: #979797;
+    font-size: 1.3rem;
+}

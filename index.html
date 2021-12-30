@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSD to HTML Practice</title>
+    <link rel="shortcut icon" href="resources/img/favicon.png" type="image/x-icon">
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="fontawesome/all.min.css">
+    <link rel="stylesheet" href="fontawesome/fontawesome.min.css">
+    <!--Vendors File-->
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="vendors/css/bxslider.min.css">
+    <!--Resources File-->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+<body>
+
+<!-- Start Header Area -->
+
+<header class="header_area" id="home">
+    <div class="navigation_bar">
+        <div class="container">
+            <div class="logo"><a href="#home"><img src="resources/img/logo.png" alt="The Modernist"></a></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#">style demo</a></li>
+                    <li><a href="#">full width</a></li>
+                    <li><a href="#">dropdown</a></li>
+                    <li><a href="#">portfolio</a></li>
+                    <li><a href="#">gallery</a></li>
+                </ul>
+            </nav>
+            <div class="mobile_menu">
+                <span onclick="openNav()"><i class="fas fa-bars"></i></span>
+                <div id="mobile_nav" class="overlay">
+                    <a class="close_btn" href="javascript:void(0)" onclick="closeNav()"><i class="fas fa-times"></i></a>
+                    <div class="overlay_mobile_menu">
+                        <a onclick="closeNav()" href="#home">home</a>
+                        <a onclick="closeNav()" href="#services">services</a>
+                        <a onclick="closeNav()" href="#team">team</a>
+                        <a onclick="closeNav()" href="#skills">skills</a>
+                        <a onclick="closeNav()" href="#portfolio">portfolio</a>
+                        <a onclick="closeNav()" href="#testimonial">testimonial</a>
+                        <a onclick="closeNav()" href="#contact">contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- End Header Area -->
+
+<!-- Start Slider Area -->
+
+<section class="slider_area create_sticky_menu">
+    <div class="slideshow-container container">
+
+<!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="description">
+                <h3>Cursus penati saccum nulla.</h3>
+                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
+                <a href="#">Read More Here »</a>
+            </div>
+            <div class="image">
+                <img src="resources/img/slider_01.png" alt="Sorry For Reload">
+            </div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="description">
+                <h3>Cursus penati saccum nulla.</h3>
+                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
+                <a href="#">Read More Here »</a>
+            </div>
+            <div class="image">
+                <img src="resources/img/slider_02.png" alt="Sorry For Reload">
+            </div>
+        </div>
+    
+        <div class="mySlides fade">
+            <div class="description">
+                <h3>Cursus penati saccum nulla.</h3>
+                <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat adipiscinia pellentum leo.</p>
+                <a href="#">Read More Here »</a>
+            </div>
+            <div class="image">
+                <img src="resources/img/slider_03.png" alt="Sorry For Reload">
+            </div>
+        </div>
+
+<!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+            
+<!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+</section>
+
+<!-- End Slider Area -->
+
+
+<!-- Start Services Area -->
+
+<section class="services_area">
+    <div class="container">
+        <div class="services_parent_box">
+            <div class="col span_1_of_4 services_child_box">
+                <img src="resources/img/services_01.png" alt="">
+                <h3>SERVICE TITLE</h3>
+                <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
+            </div>
+            <div class="col span_1_of_4 services_child_box">
+                <img src="resources/img/services_02.png" alt="">
+                <h3>SERVICE TITLE</h3>
+                <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
+            </div>
+            <div class="col span_1_of_4 services_child_box">
+                <img src="resources/img/services_03.png" alt="">
+                <h3>SERVICE TITLE</h3>
+                <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
+            </div>
+            <div class="col span_1_of_4 services_child_box">
+                <img src="resources/img/services_04.png" alt="">
+                <h3>SERVICE TITLE</h3>
+                <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Services Area -->
+
+
+<!-- Start Work Area -->
+
+<section class="work_area">
+    <div class="container">
+        <div class="work_area_header">
+            <h2>LATEST WORK</h2>
+        </div>
+        <div class="work_parent_box">
+            <div class="col span_2_of_6 work_child_box">
+                <img src="resources/img/work_01.png" alt="">
+                <h5>LOREM IPSUM DOLOR</h5>
+            </div>
+            <div class="col span_2_of_6 work_child_box">
+                <img src="resources/img/work_02.png" alt="">
+                <h5>LOREM IPSUM DOLOR</h5>
+            </div>
+            <div class="col span_2_of_6 work_child_box">
+                <img src="resources/img/work_03.png" alt="">
+                <h5>LOREM IPSUM DOLOR</h5>
+            </div>
+            <div class="col span_2_of_6 work_child_box">
+                <img src="resources/img/work_04.png" alt="">
+                <h5>LOREM IPSUM DOLOR</h5>
+            </div>
+            <div class="col span_2_of_6 work_child_box">
+                <img src="resources/img/work_05.png" alt="">
+                <h5>LOREM IPSUM DOLOR</h5>
+            </div>
+            <div class="col span_2_of_6 work_child_box">
+                <img src="resources/img/work_06.png" alt="">
+                <h5>LOREM IPSUM DOLOR</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- End Work Area -->
+
+
+<!-- Start Footer Area -->
+
+<footer class="footer_area">
+    <div class="container">
+        <div class="footer_parent_box">
+            <div class="col span_1_of_4 footer_child_box">
+                <h3>From The Blog</h3>
+                <div class="blogs_child">
+                    <h4>Post Title</h4>
+                    <span><a href="#">Admin</a>, domainname.com </span> <br/> <span class="bal"> Friday, 6th April 2000</span>
+                    <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt. Namjusto cras urna urnaretra lor urna neque sed quis orci nulla.</p>
+                    <a href="#">Read More »</a>
+                </div>
+            </div>
+            <div class="col span_1_of_4 footer_child_box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Quick Link 1</a></li>
+                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Quick Link 1</a></li>
+                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Quick Link 1</a></li>
+                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Quick Link 1</a></li>
+                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Quick Link 1</a></li>
+                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Quick Link 1</a></li>
+                    <li><a href="#"><i class="fas fa-angle-double-right"></i>Quick Link 1</a></li>
+                </ul>
+            </div>
+            <div class="col span_1_of_4 footer_child_box">
+                <h3>LATEST TWEETS</h3>
+                <p><a href="#">@namehere</a> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus.laoremut vitae doloreet 1 day ago</p>
+                <p><a href="#">@namehere</a> Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus.laoremut vitae doloreet 1 day ago</p>
+            </div>
+            <div class="col span_1_of_4 footer_child_box">
+                <h3>CONTACT US</h3>
+				<form action="#">
+					<input type="text" placeholder="Full Name" />
+					<input type="email" placeholder="Email Address" />
+					<input type="text" placeholder="Subject" />
+					<textarea placeholder="Message"></textarea>
+					<input type="submit" value="SUBMIT" />
+				</form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- End Footer Area -->
+
+
+<!-- Start COPYRIGHT Area -->
+
+<section class="copyright_area">
+    <div class="container">
+        <p class="copyright_child_1">Copyright © 2013 Domain Name - All Rights Reserved</p>
+        <p class="copyright_child_2">Template by OS Templates</p>
+    </div>
+</section>
+
+<!-- End COPYRIGHT Area -->
+
+
+
+    <!--Java Script Vendors File-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="vendors/js/html5shiv.min.js"></script>
+    <script src="vendors/js/respond.min.js"></script>
+    <script src="vendors/js/selectivizr.min.js"></script>
+    <script src="vendors/js/jquery.bxslider.min.js"></script>
+    <script src="vendors/js/jquery.waypoints.min.js"></script>
+    <!--Java Script Resources File-->
+    <script src="resources/js/main.js"></script>
+</body>
+</html>
